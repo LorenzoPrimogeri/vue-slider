@@ -43,18 +43,15 @@ const app = new Vue({
         slidesIndex: 0
     },
     methods: {
-        slideUp() {
+        slideUp(slidesIndex) {
             if (this.slidesIndex > 0) {
                 this.slidesIndex--;
             }
         },
-        slideDown() {
+        slideDown(slidesIndex) {
             if (this.slidesIndex < this.slides.length) {
                 this.slidesIndex++;
             }
-        },
-        assignClass() {
-
         }
-    },
-});
+        },
+    });
